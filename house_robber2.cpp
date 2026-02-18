@@ -15,7 +15,7 @@ public:
         prev=nums[1];
         for(int i = 2; i<nums.size(); i++){
             ans2=max(nums[i]+prevprev,prev);
-            prevprev=prev;
+            prevprev =prev;
             prev=ans2;
         }
         return max(ans1,ans2);
